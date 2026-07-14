@@ -1,0 +1,46 @@
+import { Analytics } from '@vercel/analytics/next'
+import type { Metadata, Viewport } from 'next'
+import { Montserrat } from 'next/font/google'
+import { SiteHeader } from '@/components/site-header'
+import { SiteFooter } from '@/components/site-footer'
+import './globals.css'
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+})
+
+export const metadata: Metadata = {
+  title: 'Bay Area Women in Space and Aerospace',
+  description:
+    'BAWISA is a community connecting, celebrating, and empowering women across the Bay Area space and aerospace industry through events, mentorship, and member spotlights.',
+  generator: 'v0.app',
+}
+
+export const viewport: Viewport = {
+  colorScheme: 'dark',
+  themeColor: '#0a0a16',
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en" className={`${montserrat.variable} bg-background`}>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className={montserrat.variable}>
+        <SiteHeader />
+        <main className="flex-1">{children}</main>
+        <SiteFooter />
+        {process.env.NODE_ENV === 'production' && <Analytics />}
+      </body>
+    </html>
+  )
+}

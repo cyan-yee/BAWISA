@@ -1,0 +1,94 @@
+import Link from 'next/link'
+import { Rocket, Globe, Mail, MessagesSquare } from 'lucide-react'
+import { NAV_LINKS, LINKS, QUOTES } from '@/lib/site'
+
+export function SiteFooter() {
+  const quote = QUOTES[0]
+
+  return (
+    <footer className="border-t border-border/60 bg-card/40">
+      <div className="mx-auto max-w-6xl px-4 py-12 md:px-6">
+        <figure className="mx-auto mb-12 max-w-2xl text-center">
+          <blockquote className="font-display text-balance text-xl font-medium text-foreground md:text-2xl">
+            &ldquo;{quote.quote}&rdquo;
+          </blockquote>
+          <figcaption className="mt-3 text-sm text-muted-foreground">
+            — {quote.author}
+          </figcaption>
+        </figure>
+
+        <div className="grid gap-8 border-t border-border/60 pt-10 md:grid-cols-3">
+          <div>
+            <Link href="/" className="flex items-center gap-2">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                <Rocket className="h-5 w-5" aria-hidden="true" />
+              </span>
+              <span className="font-display text-sm font-bold text-foreground">
+                BAWISA
+              </span>
+            </Link>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
+              Bay Area Women in Space and Aerospace — connecting, celebrating,
+              and empowering women across the industry.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold text-foreground">Explore</h3>
+            <ul className="mt-4 space-y-2">
+              {NAV_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold text-foreground">Connect</h3>
+            <ul className="mt-4 space-y-3">
+              <li>
+                <a
+                  href={LINKS.slack}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <MessagesSquare className="h-4 w-4" aria-hidden="true" /> Join us on Slack
+                </a>
+              </li>
+              <li>
+                <a
+                  href={LINKS.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <Globe className="h-4 w-4" aria-hidden="true" /> LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href={LINKS.email}
+                  className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <Mail className="h-4 w-4" aria-hidden="true" /> Email us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-10 border-t border-border/60 pt-6 text-center text-xs text-muted-foreground">
+          © {new Date().getFullYear()} Bay Area Women in Space and Aerospace.
+          All rights reserved.
+        </div>
+      </div>
+    </footer>
+  )
+}
