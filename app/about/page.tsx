@@ -15,17 +15,17 @@ const values = [
   {
     icon: Rocket,
     title: 'What we do',
-    body: 'A quarterly speaker series featuring women doing extraordinary things in aerospace — covering topics like negotiation, founding a startup, data analytics, self-branding, and company features.',
+    body: 'A quarterly speaker series featuring women doing extraordinary things in aerospace, covering topics like negotiation, founding a startup, data analytics, self-branding, and company features.',
   },
   {
     icon: MapPin,
     title: 'Where we are',
-    body: 'Hosted at startups and incubators throughout the Bay Area, and virtually — rooted in the region where so much of the industry calls home.',
+    body: 'Hosted at startups and incubators throughout the Bay Area, and virtually.',
   },
   {
     icon: Heart,
     title: 'Why it matters',
-    body: 'We help with hiring, retention, and community in a historically male-dominated field — because representation changes careers.',
+    body: 'We help with hiring, retention, and community in a historically male-dominated field. Because representation matters, it inspires, and can changes careers.',
   },
 ]
 
