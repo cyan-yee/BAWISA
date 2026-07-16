@@ -8,24 +8,24 @@ import { LINKS } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'About Us | BAWISA',
   description:
-    'How BAWISA started, what we do, where we are, and how to join our community of women in space and aerospace.',
+    'How BAWISA started, what we do, where we are, and how to join our community of women and gender minorities in space and aerospace.',
 }
 
 const values = [
   {
     icon: Rocket,
     title: 'What we do',
-    body: 'We host events, run mentorship circles, spotlight members, and share opportunities across the Bay Area space and aerospace ecosystem.',
+    body: 'A quarterly speaker series featuring women doing extraordinary things in aerospace — covering topics like negotiation, founding a startup, data analytics, self-branding, and company features.',
   },
   {
     icon: MapPin,
     title: 'Where we are',
-    body: 'Rooted in the San Francisco Bay Area — from the Peninsula to the South Bay — where so much of the industry calls home.',
+    body: 'Hosted at startups and incubators throughout the Bay Area, and virtually — rooted in the region where so much of the industry calls home.',
   },
   {
     icon: Heart,
     title: 'Why it matters',
-    body: 'Representation and community change careers. We create the space for women to connect, grow, and lead in the industry.',
+    body: 'We help with hiring, retention, and community in a historically male-dominated field — because representation changes careers.',
   },
 ]
 
@@ -34,8 +34,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About Us"
-        title="Building community among women in space and aerospace"
-        description="BAWISA began as a small group of women who wanted more connection in an industry they love. Today it is a growing network across the Bay Area."
+        title="Building community among women and gender minorities in aerospace"
+        description="BAWISA is a quarterly speaker series connecting and inspiring women and gender minorities in aerospace. Since 2016, we've grown into a network across the Bay Area."
       >
         <ButtonLink href={LINKS.joinForm} external size="lg">
           Join the Community <ArrowRight />
@@ -54,16 +54,21 @@ export default function AboutPage() {
             </div>
             <div className="space-y-4 leading-relaxed text-muted-foreground">
               <p>
-                BAWISA started around a simple idea: women in space and
-                aerospace deserve a community that celebrates their work and
-                supports their growth. What began as informal meetups quickly
-                grew into a network of engineers, scientists, students, and
-                leaders from across the region.
+                BAWISA was formed by Jeanette Quinlan in September 2016.
+                Inspired to connect the incredible women she had met
+                throughout her career in the male-dominated world of
+                aerospace, Jeanette held the first happy hour in the common
+                room of her condominium building in downtown San Francisco.
+                The next two happy hours that year, hosted at Stanford and
+                NASA Ames, brought in even more of a following. Starting in
+                2017, happy hours began to feature women speaking on a
+                variety of aerospace-related topics.
               </p>
               <p>
-                Today, we bring people together through events, mentorship, and
-                member spotlights — creating opportunities to connect, learn,
-                and lift each other up. Whether you are just starting out or
+                Today, BAWISA is a quarterly speaker series connecting and
+                inspiring women and gender minorities in aerospace — helping
+                with hiring, retention, and community in a historically
+                male-dominated field. Whether you are just starting out or
                 decades into your career, there is a place for you here.
               </p>
             </div>
@@ -110,11 +115,15 @@ export default function AboutPage() {
               Meet Jeanette
             </h2>
             <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
-              Jeanette founded BAWISA to create the community she wished she had
-              earlier in her own career. Passionate about mentorship and
-              connection, she leads the group's mission to make the Bay Area
-              space and aerospace industry more welcoming, visible, and
-              supportive for women.
+              Jeanette founded BAWISA in 2016 to create the community she
+              wished she had earlier in her own career. Passionate about
+              mentorship and connection, she leads the group's mission to
+              make the Bay Area space and aerospace industry more welcoming,
+              visible, and supportive for women and gender minorities.
+            </p>
+            <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
+              Jeanette is so grateful for the support of the women (and men)
+              who make this all possible.
             </p>
             <blockquote className="mt-6 border-l-2 border-accent pl-4 font-display text-lg italic text-foreground">
               &ldquo;When we build community, we build the future of this
@@ -124,14 +133,30 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Host an event CTA */}
+      <section className="mx-auto max-w-4xl px-4 pb-16 text-center md:px-6 md:pb-20">
+        <p className="leading-relaxed text-muted-foreground">
+          Interested in hosting a BAWISA event at your company or space?{' '}
+          
+            href={LINKS.hostForm}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary hover:underline"
+          >
+            Reach out here
+          </a>
+          .
+        </p>
+      </section>
+
       {/* Join us CTA */}
       <section className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6 md:py-20">
         <h2 className="text-balance font-display text-3xl font-bold text-foreground">
           Ready to join us?
         </h2>
         <p className="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">
-          Become part of a community that connects, celebrates, and empowers
-          women across space and aerospace.
+          Become part of a community that connects and inspires women and
+          gender minorities across space and aerospace.
         </p>
         <div className="mt-8 flex justify-center">
           <ButtonLink href={LINKS.joinForm} external size="lg">
