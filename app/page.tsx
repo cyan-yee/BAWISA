@@ -13,18 +13,18 @@ import { LINKS } from '@/lib/site'
 const announcements = [
   {
     date: 'June 2026',
-    title: 'BAWISA crosses 500 members across the Bay Area',
-    body: 'Our community continues to grow with engineers, scientists, students, and leaders from across the space and aerospace industry.',
+    title: 'Some title',
+    body: 'description',
   },
   {
     date: 'May 2026',
-    title: 'New mentorship circles now forming',
-    body: 'Sign up through our community form to be matched with mentors and peers in your area of interest.',
+    title: 'Another title',
+    body: 'description',
   },
   {
     date: 'April 2026',
-    title: 'Partner companies join our hosting network',
-    body: 'Several Bay Area aerospace companies have signed up to host upcoming BAWISA events and tours.',
+    title: 'Another title',
+    body: 'description',
   },
 ]
 
