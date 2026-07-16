@@ -58,7 +58,7 @@ export function SiteFooter() {
             <h3 className="text-sm font-semibold text-foreground">Connect</h3>
             <ul className="mt-4 space-y-3">
               <li>
-                
+                <a
                   href="https://forms.gle/dCEazkBewWQZVrru9"
                   target="_blank"
                   rel="noopener noreferrer"
