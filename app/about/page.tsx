@@ -129,7 +129,7 @@ export default function AboutPage() {
               &ldquo;When we build community, we build the future of this
               industry.&rdquo;
             </blockquote>
-            
+            <a
               href="https://www.linkedin.com/in/jeanettequinlan/"
               target="_blank"
               rel="noopener noreferrer"
