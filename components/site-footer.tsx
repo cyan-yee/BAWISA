@@ -65,7 +65,8 @@ export function SiteFooter() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  <Users className="h-4 w-4" aria-hidden="true" /> Join Us
+                  <Users className="h-4 w-4" aria-hidden="true" />
+                  Join Us
                 </a>
                 <ul className="mt-2 ml-6 space-y-2">
                   <li>
@@ -75,7 +76,8 @@ export function SiteFooter() {
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
                     >
-                      <MessageSquare className="h-4 w-4" aria-hidden="true" /> Slack
+                      <MessageSquare className="h-4 w-4" aria-hidden="true" />
+                      Slack
                     </a>
                   </li>
                   <li>
@@ -85,7 +87,8 @@ export function SiteFooter() {
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
                     >
-                      <Mail className="h-4 w-4" aria-hidden="true" /> Email
+                      <Mail className="h-4 w-4" aria-hidden="true" />
+                      Email
                     </a>
                   </li>
                 </ul>
@@ -97,7 +100,8 @@ export function SiteFooter() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  <Linkedin className="h-4 w-4" aria-hidden="true" /> LinkedIn
+                  <Linkedin className="h-4 w-4" aria-hidden="true" />
+                  LinkedIn
                 </a>
               </li>
             </ul>
