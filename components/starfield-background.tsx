@@ -17,15 +17,9 @@ export function StarfieldBackground() {
 
     const STAR_COUNT = 400
     const SPEED = 0.2
+    const STAR_COLOR = '255, 255, 255' // light white
 
-    // light purple and light blue tones to alternate between
-    const COLORS = [
-      '186, 166, 255', // light purple
-      '166, 210, 255', // light blue
-      '255, 255, 255', // white, for variety
-    ]
-
-    type Star = { x: number; y: number; z: number; color: string }
+    type Star = { x: number; y: number; z: number }
     let stars: Star[] = []
 
     function initStars() {
@@ -35,7 +29,6 @@ export function StarfieldBackground() {
           x: (Math.random() - 0.5) * width,
           y: (Math.random() - 0.5) * height,
           z: Math.random() * width,
-          color: COLORS[Math.floor(Math.random() * COLORS.length)],
         })
       }
     }
@@ -46,10 +39,7 @@ export function StarfieldBackground() {
         return
       }
 
-      const gradient = ctx.createLinearGradient(0, 0, 0, height)
-      gradient.addColorStop(0, '#0a0620')
-      gradient.addColorStop(1, '#1a0f3d')
-      ctx.fillStyle = gradient
+      ctx.fillStyle = '#000000'
       ctx.fillRect(0, 0, width, height)
 
       const cx = width / 2
@@ -62,7 +52,6 @@ export function StarfieldBackground() {
           star.x = (Math.random() - 0.5) * width
           star.y = (Math.random() - 0.5) * height
           star.z = width
-          star.color = COLORS[Math.floor(Math.random() * COLORS.length)]
         }
 
         const k = 128 / star.z
@@ -76,7 +65,7 @@ export function StarfieldBackground() {
         const opacity = Math.min(1, depthRatio * 1.3 + 0.25)
 
         ctx.beginPath()
-        ctx.fillStyle = `rgba(${star.color}, ${opacity})`
+        ctx.fillStyle = `rgba(${STAR_COLOR}, ${opacity})`
         ctx.arc(sx, sy, size, 0, Math.PI * 2)
         ctx.fill()
       }
