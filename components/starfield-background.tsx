@@ -61,7 +61,7 @@ export function StarfieldBackground() {
         if (sx < 0 || sx > width || sy < 0 || sy > height) continue
 
         const depthRatio = 1 - star.z / width
-        const size = depthRatio * 2.8 + 0.4
+        const size = depthRatio * 1.4 + 0.2
         const opacity = Math.min(1, depthRatio * 1.3 + 0.25)
 
         // soft glow to mimic a real star's blur
