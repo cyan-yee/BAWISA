@@ -33,7 +33,7 @@ export default function HomePage() {
   return (
     <div className="relative isolate">
       {/* Page-wide starfield background */}
-      <div className="fixed inset-0 -z-10">
+      <div className="absolute inset-0 -z-10">
         <StarfieldBackground />
       </div>
 
@@ -63,7 +63,7 @@ export default function HomePage() {
       </section>
 
       {/* Mission statement band */}
-      <section className="border-y border-border/60 bg-card/40">
+      <section className="border-y border-border/60 bg-card/50">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6">
           <Sparkles
             className="mx-auto mb-5 h-8 w-8 text-accent"
@@ -108,7 +108,7 @@ export default function HomePage() {
       </section>
 
       {/* Next event */}
-      <section className="border-y border-border/60">
+      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/10 to-background">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 md:grid-cols-2 md:items-center md:px-6 md:py-20">
           <div>
             <div className="mb-4 flex items-center gap-3">
@@ -166,7 +166,7 @@ export default function HomePage() {
       </section>
 
       {/* Event recap */}
-      <section>
+      <section className="bg-gradient-to-l from-accent/10 to-background">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
@@ -214,7 +214,7 @@ export default function HomePage() {
       </section>
 
       {/* Member spotlight teaser */}
-      <section className="border-t border-border/60">
+      <section className="border-t border-border/60 bg-gradient-to-br from-secondary/15 via-primary/5 to-background">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
             <div className="max-w-xl">
