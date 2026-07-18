@@ -63,7 +63,7 @@ export default function HomePage() {
       </section>
 
       {/* Mission statement band */}
-      <section className="border-y border-border/60 bg-card/45">
+      <section className="border-y border-border/60 bg-gradient-to-br from-primary/30 to-accent/10 p-6"
         <div className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6">
           <Sparkles
             className="mx-auto mb-5 h-8 w-8 text-accent"
@@ -166,7 +166,7 @@ export default function HomePage() {
       </section>
 
       {/* Event recap */}
-      <section className="border-t border-border/60 bg-gradient-to-br from-primary/50 to-accent/20 p-6">
+      <section className="border-t border-border/60 bg-gradient-to-br from-primary/45 to-accent/20 p-6">
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-2xl border border-border/60">
