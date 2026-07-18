@@ -90,7 +90,7 @@ export default function HomePage() {
             {announcements.map((item) => (
               <article
                 key={item.title}
-                className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/20 to-accent/20 p-6"
+                className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/50 to-accent/20 p-6"
               >
                 <span className="text-xs font-semibold uppercase tracking-widest text-accent">
                   {item.date}
