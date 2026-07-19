@@ -134,7 +134,7 @@ export default function HomePage() {
               </ButtonLink>
             </div>
           </div>
-          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/65 to-accent/35 p-6">
+          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/30 p-6">
             <div className="flex items-baseline gap-2">
               <span className="font-display text-6xl font-bold text-foreground">
                 TBD
@@ -178,10 +178,10 @@ export default function HomePage() {
               />
             </div>
             <div>
-              <span className="text-sm font-semibold uppercase tracking-widest text-dark-amethyst">
+              <span className="text-sm font-semibold uppercase tracking-widest text-deep-lilac">
                 Event Recap    |    July 8, 2026
               </span>
-              <h2 className="mt-3 font-display text-3xl font-bold text-deep-space-blue">
+              <h2 className="mt-3 font-display text-3xl font-bold text-baltic-blue">
                 BAWISA Happy Hour with Xona!
               </h2>
               <div className="mt-4 space-y-4 text-foreground">
