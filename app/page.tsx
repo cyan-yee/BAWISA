@@ -107,7 +107,7 @@ export default function HomePage() {
       </section>
 
       {/* Next event */}
-      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/5 to-background">
+      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/3 to-background">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 md:grid-cols-2 md:items-center md:px-6 md:py-20">
           <div>
             <div className="mb-4 flex items-center gap-3">
@@ -223,7 +223,7 @@ export default function HomePage() {
               <h2 className="mt-3 font-display text-3xl font-bold text-foreground">
                 Celebrating the women shaping our industry
               </h2>
-              <p className="mt-4 leading-relaxed text-alice-blue">
+              <p className="mt-4 leading-relaxed text-baby-blue-ice">
                 Each month we spotlight a member&apos;s journey, career, and
                 advice. Know someone inspiring? Nominate them to be featured
                 next.
