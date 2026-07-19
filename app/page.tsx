@@ -189,10 +189,10 @@ export default function HomePage() {
                   BAWISA closed out Women&apos;s History Month with a happy hour hosted by Xona Space Systems in Burlingame. Guests got a look inside Xona&apos;s offices, home to the team building Pulsar, the first commercial navigation constellation designed for modern positioning needs.
                 </p>
                 <p className="leading-relaxed">
-                  The evening centered on Collective Wisdom Peer Roundtables, giving attendees space for honest conversation and problem-solving with other women in the industry, alongside plenty of time to mingle over food and drinks provided by Xona.
+                  The evening centered on Collective Wisdom Peer Roundtables, giving attendees space for constructive conversation and problem-solving, with time to mingle over food and drinks provided by Xona.
                 </p>
                 <p className="leading-relaxed">
-                  Thanks to Xona for hosting and to everyone who came out to connect and share the room.
+                  Thank you to Xona for hosting and to everyone who came out to connect.
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-4">
