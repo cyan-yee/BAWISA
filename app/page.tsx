@@ -134,7 +134,7 @@ export default function HomePage() {
               </ButtonLink>
             </div>
           </div>
-          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/30 p-6">
+          <div className="rounded-2xl border border-border/60 bg-gradient-to-br from-primary/60 to-accent/34 p-6">
             <div className="flex items-baseline gap-2">
               <span className="font-display text-6xl font-bold text-foreground">
                 TBD
