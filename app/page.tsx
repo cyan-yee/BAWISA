@@ -70,9 +70,8 @@ export default function HomePage() {
             aria-hidden="true"
           />
           <p className="text-balance font-display text-2xl font-medium leading-relaxed text-foreground md:text-3xl">
-            Our mission is to build a thriving network where women in
-            aerospace find community, visibility, and the support to 
-            pursue their boldest ideas.
+            Our mission is to build a network where women in
+            aerospace find community, visibility, and support.
           </p>
         </div>
       </section>
@@ -90,7 +89,7 @@ export default function HomePage() {
             {announcements.map((item) => (
               <article
                 key={item.title}
-                className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/50 to-accent/20 p-6"
+                className="flex flex-col rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-6"
               >
                 <span className="text-xs font-semibold uppercase tracking-widest text-accent">
                   {item.date}
