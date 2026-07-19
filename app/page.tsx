@@ -178,10 +178,10 @@ export default function HomePage() {
               />
             </div>
             <div>
-              <span className="text-sm font-semibold uppercase tracking-widest text-foreground">
+              <span className="text-sm font-semibold uppercase tracking-widest text-accent">
                 Event Recap    |    July 8, 2026
               </span>
-              <h2 className="mt-3 font-display text-3xl font-bold text-accent">
+              <h2 className="mt-3 font-display text-3xl font-bold text-primary">
                 BAWISA Happy Hour with Xona!
               </h2>
               <div className="mt-4 space-y-4 text-foreground">
@@ -217,7 +217,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
             <div className="max-w-xl">
-              <span className="text-sm font-semibold uppercase tracking-widest text-accent">
+              <span className="text-sm font-semibold uppercase tracking-widest text-primary">
                 Member Spotlight
               </span>
               <h2 className="mt-3 font-display text-3xl font-bold text-foreground">
