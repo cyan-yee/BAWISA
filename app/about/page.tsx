@@ -72,7 +72,7 @@ export default function AboutPage() {
             {values.map((value) => (
               <div
                 key={value.title}
-                className="rounded-xl border border-border/60 bg-card p-5"
+                className="rounded-xl border border-border/60 bg-gradient-to-br from-primary/70 to-accent/40 p-5"
               >
                 <value.icon
                   className="mb-3 h-6 w-6 text-accent"
@@ -91,7 +91,7 @@ export default function AboutPage() {
       </section>
 
       {/* The person behind BAWISA */}
-      <section className="border-y border-border/60 bg-card/40">
+      <section className="border-y border-border/60 bg-gradient-to-tr from-primary/10 to-background">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-[auto_1fr] md:items-center md:px-6 md:py-20">
           <div className="mx-auto w-48 shrink-0 overflow-hidden rounded-2xl border border-border/60 md:w-60">
             <Image
@@ -137,19 +137,21 @@ export default function AboutPage() {
       </section>
 
       {/* Host an event CTA */}
-      <section className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6 md:py-20">
-        <p className="leading-relaxed text-muted-foreground">
-          Interested in hosting a BAWISA event at your company or space?{' '}
-          <a
-            href={LINKS.hostForm}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-primary hover:underline"
-          >
-            Reach out here
-          </a>
-          .
-        </p>
+      <section className="border-t border-border/60 bg-gradient-to-br from-secondary/25 via-primary/10 to-background">
+        <div className="mx-auto max-w-4xl px-4 py-16 text-center md:px-6 md:py-20">
+          <p className="leading-relaxed text-muted-foreground">
+            Interested in hosting a BAWISA event at your company or space?{' '}
+            <a
+              href={LINKS.hostForm}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-primary hover:underline"
+            >
+              Reach out here
+            </a>
+            .
+          </p>
+        </div>
       </section>
     </>
   )
